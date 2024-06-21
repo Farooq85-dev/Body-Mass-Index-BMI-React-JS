@@ -28,7 +28,7 @@ function BmiComp() {
       const roundedBmi = userBmi.toFixed(2);
 
       if (roundedBmi < 18.5) {
-        toast.error(`Your BMI is ${userBmi}. You are Underweight.`);
+        toast.error(`Your BMI is ${roundedBmi}. You are Underweight.`);
       } else if (roundedBmi >= 18.5 && roundedBmi < 24.9) {
         toast.success(
           `Your BMI is ${roundedBmi}. Congratulation! you are Normal.`
