@@ -24,8 +24,8 @@ function BmiComp() {
         parseFloat(heightFeet) * 12 + parseFloat(heightInches);
       const heightIntoMeters = heightIntoInches * 0.0254;
       const userBmi =
-        parseFloat(weight) / (heightIntoMeters * heightIntoMeters).toFixed(0);
-      const roundedBmi = userBmi.toFixed(2);
+        parseFloat(weight) / (heightIntoMeters * heightIntoMeters);
+      const roundedBmi = userBmi.toFixed(0);
 
       if (roundedBmi < 18.5) {
         toast.error(`Your BMI is ${roundedBmi}. You are Underweight.`);
